@@ -1,0 +1,106 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --button-hover-duration: 0.5s;
+}
+
+* {
+    scrollbar-width: thin;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(41, 84, 163, 0.2);
+    border-radius: 10px;
+}
+  
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: overlay;
+}
+
+input, textarea {
+  @apply bg-white/30 px-4 py-2 rounded-lg shadow-inner shadow-azul-900/40 outline-none transition-all duration-500 
+  backdrop-blur-3xl;
+}
+
+input:focus, textarea:focus {
+  @apply bg-azul-200/70 border-azul-200/70 shadow-md shadow-azul-400/60;
+}
+
+.my-button {
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all var(--button-hover-duration) ease-in-out;
+  -o-transition: all var(--button-hover-duration)  ease-in-out;
+  -webkit-transition: all var(--button-hover-duration)  ease-in-out;
+  transition: all var(--button-hover-duration)  ease-in-out;
+
+  background-image: linear-gradient(-15deg, #C961DE50, #4A79CF50, #2954A350, #2954A350, #4A79CF50, #C961DE50);
+}
+
+.my-button:hover {
+  background-position: 100% 0;
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.4);
+}
+
+.logo {
+  background-size: 500% 100%;
+  transition: all 0.3s linear;
+  -webkit-background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(-5deg, #C961DE50, #4A79CF, white 70%);
+}
+
+.logo:hover {
+  background-position: 100% 0;  
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px!important;
+}
+
+.slide {
+  @apply bg-azul-400/40 text-center rounded-2xl gap-4 p-4 pb-8;
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: center!important;
+  justify-content: space-between!important;
+  height: calc((100% - 30px) / 2) !important;
+  transition: all 0.3s ease!important;
+}
+
+.slide:hover {
+  filter: brightness(1.1);
+}
+
+@keyframes fadeOut {
+  from {
+    scale: 1;
+    opacity: 1;
+  }
+  to {
+    scale: 0;
+    opacity: 0;
+  }
+}
+
+.tooltip[data-state='closed'] {
+  animation: fadeOut 300ms linear;
+}
