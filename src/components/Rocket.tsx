@@ -21,7 +21,7 @@ export default function Rocket() {
   }
   return (
     <motion.div
-      className="absolute -top-12 translate-x-[90%]"
+      className="absolute -top-12 translate-x-[80%] 2xl:translate-x-[90%]"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.6 }}

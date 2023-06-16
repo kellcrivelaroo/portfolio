@@ -10,7 +10,7 @@ export default function Background() {
       {/* Blur Azul 2 */}
       <div className="absolute -bottom-[80%] -left-[400px] z-[-1] h-[500px] w-[1200px] rounded-full bg-azul-600/80 blur-[160px]" />
       {/* Blur Azul 3 */}
-      <div className="absolute -bottom-[180%] -right-60 z-[-1] h-[600px] w-[1200px] rounded-full bg-azul-200/20 blur-[240px]" />
+      <div className="absolute -bottom-[320%] -right-60 z-[-1] h-[600px] w-[1200px] rounded-full bg-azul-200/20 blur-[240px]" />
     </div>
   )
 }

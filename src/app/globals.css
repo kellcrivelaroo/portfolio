@@ -71,8 +71,7 @@ input:focus, textarea:focus {
 .swiper {
   width: 100%;
   height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 6px!important;
 }
 
@@ -104,3 +103,11 @@ input:focus, textarea:focus {
 .tooltip[data-state='closed'] {
   animation: fadeOut 300ms linear;
 }
+
+.personal-project {
+  padding: 16px!important;
+}
+
+
+
+

@@ -19,7 +19,7 @@ import css from '../assets/svgs/css3.svg'
 import javascript from '../assets/svgs/javascript.svg'
 import { projects } from '../utils/projects'
 
-interface SwiperRefCustom extends SwiperRef {
+export interface SwiperRefCustom extends SwiperRef {
   slidePrev: () => void
   slideNext: () => void
 }
