@@ -17,7 +17,7 @@ export default function Contato() {
         bg-gradient-to-b from-azul-600/50 to-azul-600/20 px-16 pb-12 pt-20 shadow-md shadow-azul-600/40 backdrop-blur-sm"
         >
           {/* Left */}
-          <div className="flex flex-1 flex-col gap-3 leading-relaxed">
+          <div className="flex flex-1 flex-col gap-3 pr-4 leading-relaxed">
             <h3 className="text-xl font-bold">Entre em contato</h3>
             <p>
               Sinta-se a vontade para me ligar ou enviar uma mensagem!

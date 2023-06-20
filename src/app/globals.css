@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 :root {
-  --button-hover-duration: 0.5s;
+  --button-hover-duration: 0.3s;
 }
 
 * {
@@ -22,7 +22,6 @@
     background-color: rgba(41, 84, 163, 0.2);
     border-radius: 10px;
 }
-  
 
 body {
   -webkit-font-smoothing: antialiased;

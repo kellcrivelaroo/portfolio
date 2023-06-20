@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 import capputeeno from '@/assets/projetos-pessoais/capputeeno.jpg'
 import calculadora from '@/assets/projetos-pessoais/calculadora-calorias.jpg'
+import geradorSenhas from '@/assets/projetos-pessoais/gerador-senhas.jpg'
 import Image from 'next/image'
 import { SwiperRefCustom } from './Portfolio'
 
@@ -14,7 +15,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { ChevronLeft, ChevronRight, Loader2 } from 'lucide-react'
 
-const projects = [capputeeno, calculadora, capputeeno]
+const projects = [capputeeno, calculadora, geradorSenhas]
 
 export default function PersonalProject() {
   const swiperRef = useRef<SwiperRefCustom | null>(null)
@@ -59,6 +60,7 @@ export default function PersonalProject() {
           grabCursor={true}
           centeredSlides={false}
           loop={false}
+          autoHeight
           modules={[Pagination, Navigation]}
           className="swiper personal-project"
         >
