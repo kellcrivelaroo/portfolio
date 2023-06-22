@@ -73,12 +73,16 @@ export default function PersonalProject() {
                     height={600}
                     className="rounded-xl group-hover:shadow-lg group-hover:shadow-azul-200/30"
                   />
-                  <button
+                  <a
                     className="my-button my-4 scale-0 px-8 py-2 opacity-0 blur-md 
-                transition-all duration-100 group-hover:scale-100 group-hover:opacity-100 group-hover:blur-none"
+                  group-hover:scale-100 group-hover:opacity-100 group-hover:blur-none group-hover:delay-100"
+                    href={project.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    role="button"
                   >
                     Saiba mais
-                  </button>
+                  </a>
                 </div>
               </SwiperSlide>
             )
