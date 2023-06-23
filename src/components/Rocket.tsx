@@ -1,5 +1,4 @@
 'use client'
-
 import { Variants, motion } from 'framer-motion'
 import React from 'react'
 import foguete from '../assets/Foguete.png'
@@ -21,7 +20,7 @@ export default function Rocket() {
   }
   return (
     <motion.div
-      className="absolute -top-60 translate-x-[50%] lg:-top-12 lg:translate-x-[80%] 2xl:translate-x-[90%]"
+      className="-top[140px] absolute z-[-1] translate-x-[50%] lg:-top-12 lg:translate-x-[80%] 2xl:translate-x-[90%]"
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.6 }}

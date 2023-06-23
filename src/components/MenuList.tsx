@@ -13,7 +13,7 @@ export default function MenuList({ toggle, isOpen }: any) {
       />
 
       <nav
-        className="fixed right-0 top-0 z-40 flex min-h-screen min-w-[85%] translate-x-full border-l
+        className="fixed right-0 top-0 z-40 flex min-h-screen min-w-[80%] translate-x-full border-l
         border-azul-700/80 bg-azul-900/90 bg-[url(../assets/stars.png)] bg-left pl-20 pt-28 font-alt 
         text-4xl backdrop-blur-sm will-change-auto lg:min-w-[360px]
      "
