@@ -95,7 +95,7 @@ export default function Contato() {
           </div>
         </div>
       </div>
-      {/* <Rocket /> */}
+      <Rocket />
     </section>
   )
 }
