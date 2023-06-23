@@ -16,7 +16,7 @@ export default function MenuToggle({ toggle, isOpen }: any) {
 
   useEffect(() => {
     function handleScroll() {
-      if (window.scrollY >= 100) {
+      if (window.scrollY >= 20) {
         setRolled(true)
       } else {
         setRolled(false)
@@ -32,13 +32,13 @@ export default function MenuToggle({ toggle, isOpen }: any) {
   return (
     <button
       onClick={toggle}
-      className={`full fixed right-10 top-8 z-50 flex h-14 w-14 items-center 
-      justify-center before:absolute before:z-[-1] before:h-full before:w-full before:-translate-x-[1px]
-      before:scale-0 before:rounded-full before:opacity-0 before:transition-all
+      className={`full fixed right-6 top-7 z-50 flex h-12 w-12 items-center justify-center before:absolute before:z-[-1] before:h-full 
+      before:w-full before:-translate-x-[1px] before:scale-0 before:rounded-full before:opacity-0 before:transition-all
+      lg:right-10 lg:top-8 lg:h-14 lg:w-14
       ${
         rolled &&
         !isOpen &&
-        'before:scale-100 before:border before:border-azul-400 before:bg-azul-400/70 before:opacity-100 before:duration-500'
+        'before:scale-100 before:border before:border-azul-400 before:bg-azul-400/90 before:opacity-100 before:duration-500 before:lg:bg-azul-400/70'
       }`}
     >
       <svg width="28" height="28" viewBox="0 0 23 18">

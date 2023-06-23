@@ -19,7 +19,7 @@ const baiJamJuree = BaiJamJuree({
 
 export const metadata = {
   title: 'Kell Crivelaro',
-  description: 'Portfólio de jobs e projetos de @kellcrivelaroo',
+  description: 'Portfólio projetos front-end - Desenvolvedor React.js',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -28,10 +28,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${poppins.variable} ${baiJamJuree.variable} overflow-x-hidden bg-azul-900 font-sans text-gray-50`}
       >
-        <div className="flex min-h-screen flex-col items-center overflow-y-hidden">
+        <div className="flex min-h-screen flex-col items-center overflow-hidden">
           <Background />
           <Header />
-          <div className="min-w-sm max-w-lg px-8 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
+          <div className="max-w-lg px-8 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
             {children}
             <Footer />
           </div>

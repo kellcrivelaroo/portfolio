@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import MenuList from './MenuList'
 import MenuToggle from './MenuToggle'
 import { useAnimate, stagger } from 'framer-motion'
+import Logo from './Logo'
 
 function useMenuAnimation(isOpen: boolean) {
   const [scope, animate] = useAnimate()
@@ -58,17 +59,8 @@ export default function Header() {
   }
 
   return (
-    <header className="z-50 flex w-full items-center justify-between py-8 pl-16 pr-8">
-      <a
-        href=""
-        className="logo group block font-alt text-[2.5em] font-bold transition-colors duration-500"
-      >
-        {`< Kell`}
-        <span className="mx-1 text-rosa duration-500 group-hover:text-rosa/60">
-          .
-        </span>
-        {` />`}
-      </a>
+    <header className="z-50 flex w-full items-center justify-between p-6 lg:py-8 lg:pl-16 lg:pr-8">
+      <Logo />
 
       <div ref={scope}>
         <MenuToggle toggle={toggle} isOpen={isOpen} />

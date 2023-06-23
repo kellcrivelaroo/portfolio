@@ -37,44 +37,50 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio">
-      <h2 className="mb-4 mt-8 pl-12 font-alt text-5xl font-bold tracking-wider">
+      <h2 className="mb-4 mt-10 text-center font-alt text-4xl font-bold tracking-wider lg:pl-12 lg:text-start lg:text-5xl">
         Portfólio
       </h2>
 
       {/* Card */}
       <div
-        className="flex h-[920px] flex-col items-center justify-center rounded-3xl border border-azul-400/20 bg-azul-700/40 
-        p-8 pb-4 shadow-lg shadow-azul-700/10 backdrop-blur-sm"
+        className="flex flex-col items-center justify-center rounded-3xl border border-azul-400/20 bg-azul-700/40 
+        p-2 pt-6 shadow-lg shadow-azul-700/10 backdrop-blur-sm lg:h-[920px] lg:p-8"
       >
-        <h3 className="flex w-full items-start gap-2 pl-4 text-2xl">
+        <h3
+          className="flex w-full flex-col items-start justify-center gap-2 pl-4 text-lg lg:flex-row 
+        lg:items-start lg:justify-start lg:text-2xl"
+        >
           Projetos desenvolvidos para{' '}
           <a
             href="https://flametecnologia.com.br"
             target="_blank"
             rel="noreferrer"
-            className="group flex translate-y-1 gap-2 transition-all duration-300 hover:text-[#ff5c00]"
+            className="group -ml-3 flex text-xl transition-all duration-300 hover:text-[#ff5c00] lg:ml-0 lg:translate-y-1 
+            lg:gap-2 lg:text-2xl"
           >
             <Image
               src={flameLogo}
               alt="Logo Flame Tecnologia"
               width={110}
               height={50}
-              className="-translate-y-1.5 brightness-0 grayscale invert transition-all duration-300
-                group-hover:brightness-100 group-hover:grayscale-0 group-hover:invert-0"
+              className="-translate-y-1.5 scale-75 brightness-0 grayscale invert transition-all duration-300 group-hover:brightness-100
+                group-hover:grayscale-0 group-hover:invert-0 lg:scale-100"
             />
             Tecnologia
           </a>
         </h3>
         {/* Swiper navigation */}
-        <div className="my-2 flex w-full items-center justify-between pr-4">
-          <div className="mt-2 flex w-full items-center gap-3 px-4">
+        <div className="my-2 flex w-full flex-col items-center justify-between pr-2 lg:flex-row lg:pr-4">
+          <div className="mb-4 mt-2 flex w-full flex-col justify-start gap-3 px-4 lg:flex-row lg:items-center">
             <span>Tecnologias utilizadas: </span>
-            <RadixTooltip icon={wordpress} alt="WordPress" />
-            <RadixTooltip icon={html} alt="HTML" />
-            <RadixTooltip icon={css} alt="CSS" />
-            <RadixTooltip icon={javascript} alt="JavaScript" width={28} />
+            <div className="flex items-center  gap-2">
+              <RadixTooltip icon={wordpress} alt="WordPress" />
+              <RadixTooltip icon={html} alt="HTML" />
+              <RadixTooltip icon={css} alt="CSS" />
+              <RadixTooltip icon={javascript} alt="JavaScript" width={28} />
+            </div>
           </div>
-          <div className="flex gap-3">
+          <div className="-mt-14 flex w-full justify-end gap-2 lg:m-0 lg:gap-3">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
               className="flex h-11 w-11 items-center justify-center rounded-full border 
@@ -102,11 +108,16 @@ export default function Portfolio() {
         )}
         {/* Swiper */}
         <Swiper
-          slidesPerView={3}
-          grid={{
-            rows: 2,
-          }}
+          slidesPerView={1}
           spaceBetween={20}
+          breakpoints={{
+            1024: {
+              slidesPerView: 3,
+              grid: {
+                rows: 2,
+              },
+            },
+          }}
           onBeforeInit={(swiper: any) => {
             swiperRef.current = swiper
           }}
@@ -131,7 +142,7 @@ export default function Portfolio() {
                     width={400}
                     height={400}
                     alt={project.title}
-                    className="rounded-2xl transition-transform delay-100 duration-200 ease-linear group-hover:scale-105"
+                    className="rounded-2xl transition-transform delay-100 duration-200 ease-linear lg:group-hover:scale-105"
                   />
                 </a>
                 <a

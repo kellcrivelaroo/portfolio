@@ -4,19 +4,24 @@ import robo from '../assets/Robo.png'
 
 export default function Hero() {
   return (
-    <section>
-      <h1 className="mb-4 mt-16 pl-12 font-alt text-[2.7em] font-bold">
+    <section className="flex min-w-[340px] flex-col">
+      <h1
+        className="mb-4 mt-8 text-center font-alt text-3xl font-bold lg:mt-16 lg:pl-12 
+      lg:text-left lg:text-[2.7em]"
+      >
         Desenvolvedor React.js Front-end
       </h1>
+
       <div
-        className="flex flex-row items-center justify-between gap-4 rounded-3xl border border-azul-200/20 
-        bg-azul-400/30 px-24 py-12 shadow-lg shadow-azul-400/20 backdrop-blur-sm"
+        className="flex flex-col items-center justify-between gap-4 rounded-3xl border border-azul-200/20 
+        bg-azul-400/30 p-6
+        shadow-lg shadow-azul-400/20 backdrop-blur-sm lg:flex-row lg:px-20 lg:py-12"
       >
-        <div className="flex basis-8/12 flex-col items-start gap-8">
-          <h2 className="text-3xl font-medium leading-normal">
+        <div className="flex basis-10/12 flex-col items-center gap-4 lg:items-start lg:gap-8">
+          <h2 className="text-center text-xl leading-snug lg:text-start lg:text-3xl lg:font-medium lg:leading-normal">
             Desenvolvedor front-end, apaixonado por criar experiências
             interativas. <br />
-            Possuo uma empresa de desenvolvimento de sites -{' '}
+            Sócio diretor da{' '}
             <a
               href="https://flametecnologia.com.br"
               className="underline transition-colors duration-500 hover:text-azul-200"
@@ -24,14 +29,14 @@ export default function Hero() {
               rel="noreferrer"
             >
               Flame Tecnologia
-            </a>{' '}
-            - e trabalho como freelancer, transformando ideias em aplicações
-            web.
+            </a>
+            , Freelancer, e em busca de novos desafios por meio de vaga como
+            desenvolvedor web.
           </h2>
           <Button text="Entre em contato" />
         </div>
 
-        <div className="-mt-44 flex items-end justify-center">
+        <div className="hidden items-end justify-center lg:flex">
           <Image src={robo} alt="robo" className="" />
         </div>
       </div>
