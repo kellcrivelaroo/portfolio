@@ -6,7 +6,7 @@ import PersonalProjects from '@/components/PersonalProjects'
 
 export default function Home() {
   return (
-    <main className="px-14 xxs:px-12 xs:px-10">
+    <main className="px-[4.5rem] xxs:px-12 xs:px-10">
       <Hero />
       <Sobre />
       <PersonalProjects />

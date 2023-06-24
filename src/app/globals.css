@@ -84,6 +84,18 @@ input:focus, textarea:focus {
   transition: all 0.3s ease!important;
 }
 
+@media(max-width: 1024px) {
+  .slide {
+    height: 340px!important;
+  }
+}
+
+@media(max-width: 371px) {
+  .slide {
+    height: 300px!important;
+  }
+}
+
 .slide:hover {
   filter: brightness(1.1);
 }

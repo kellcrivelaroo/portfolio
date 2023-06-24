@@ -80,6 +80,7 @@ export default function Portfolio() {
               <RadixTooltip icon={javascript} alt="JavaScript" width={28} />
             </div>
           </div>
+
           <div className="-mt-14 flex w-full justify-end gap-2 lg:m-0 lg:gap-3">
             <button
               onClick={() => swiperRef.current?.slidePrev()}
@@ -97,7 +98,7 @@ export default function Portfolio() {
             </button>
           </div>
         </div>
-        {/* Swiper navigation */}
+        {/* Loading */}
 
         {loading && (
           <Loader2
@@ -111,6 +112,12 @@ export default function Portfolio() {
           slidesPerView={1}
           spaceBetween={20}
           breakpoints={{
+            728: {
+              slidesPerView: 2,
+              grid: {
+                rows: 1,
+              },
+            },
             1024: {
               slidesPerView: 3,
               grid: {
