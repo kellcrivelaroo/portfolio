@@ -129,9 +129,7 @@ export default function Portfolio() {
             return (
               <SwiperSlide
                 key={project.title}
-                className={`slide group -mb-[88px] lg:mb-0 ${
-                  loading && 'opacity-0'
-                }`}
+                className={`slide group lg:mb-0 ${loading && 'opacity-0'}`}
               >
                 <h3 className="text-xl font-medium">{project.title}</h3>
                 <a

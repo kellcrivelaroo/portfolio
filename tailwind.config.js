@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xxs: '372px',
+        // => @media (min-width: 372px) { ... }
+        xs: '400px',
+        // => @media (min-width: 372px) { ... }
+      },
       fontFamily: {
         sans: 'var(--font-poppins)',
         alt: 'var(--font-bai)',

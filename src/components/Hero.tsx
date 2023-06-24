@@ -4,7 +4,7 @@ import robo from '../assets/Robo.png'
 
 export default function Hero() {
   return (
-    <section className="flex min-w-[340px] flex-col">
+    <section className="flex flex-col">
       <h1
         className="mb-4 mt-8 text-center font-alt text-3xl font-bold lg:mt-16 lg:pl-12 
       lg:text-left lg:text-[2.7em]"
@@ -14,8 +14,7 @@ export default function Hero() {
 
       <div
         className="flex flex-col items-center justify-between gap-4 rounded-3xl border border-azul-200/20 
-        bg-azul-400/30 p-6
-        shadow-lg shadow-azul-400/20 backdrop-blur-sm lg:flex-row lg:px-20 lg:py-12"
+        bg-azul-400/30 p-6 shadow-lg shadow-azul-400/20 backdrop-blur-sm lg:flex-row lg:px-20 lg:py-12"
       >
         <div className="flex basis-10/12 flex-col items-center gap-4 lg:items-start lg:gap-8">
           <h2 className="text-center text-xl leading-snug lg:text-start lg:text-3xl lg:font-medium lg:leading-normal">
