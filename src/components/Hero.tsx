@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Button from './Button'
-import robo from '../assets/Robo.png'
+import kell from '../assets/kell-dev.png'
 
 export default function Hero() {
   return (
@@ -13,11 +13,11 @@ export default function Hero() {
       </h1>
 
       <div
-        className="flex flex-col items-center justify-between gap-4 rounded-3xl border border-azul-200/20 
-        bg-azul-400/30 p-6 shadow-lg shadow-azul-400/20 backdrop-blur-sm lg:flex-row lg:px-20 lg:py-12"
+        className="flex flex-col items-center justify-between rounded-3xl border border-azul-200/20 
+        bg-azul-400/30 p-6 shadow-lg shadow-azul-400/20 backdrop-blur-sm lg:flex-row lg:px-14 lg:py-8"
       >
-        <div className="flex basis-10/12 flex-col items-center gap-4 lg:items-start lg:gap-8">
-          <h2 className="text-center text-xl leading-snug lg:text-start lg:text-3xl lg:font-medium lg:leading-normal">
+        <div className="flex basis-10/12 flex-col items-center gap-4 lg:items-start lg:gap-6">
+          <h2 className="text-center text-xl leading-snug lg:text-start lg:text-2xl lg:font-medium lg:leading-normal xl:text-3xl">
             Desenvolvedor front-end, apaixonado por criar experiências
             interativas. <br />
             Sócio diretor da{' '}
@@ -35,8 +35,8 @@ export default function Hero() {
           <Button text="Entre em contato" />
         </div>
 
-        <div className="hidden items-end justify-center lg:flex">
-          <Image src={robo} alt="robo" className="" />
+        <div className="-mx-16 -mb-8 hidden lg:flex">
+          <Image src={kell} alt="Kell Crivelaro" width={800} height={800} />
         </div>
       </div>
     </section>
