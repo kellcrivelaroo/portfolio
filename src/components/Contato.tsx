@@ -1,7 +1,6 @@
 import { Mail, MapPin } from 'lucide-react'
 import { SiWhatsapp } from 'react-icons/si'
 import Form from './Form'
-import Rocket from './Rocket'
 import Social from './Social'
 
 export default function Contato() {
@@ -95,7 +94,6 @@ export default function Contato() {
           </div>
         </div>
       </div>
-      <Rocket />
     </section>
   )
 }

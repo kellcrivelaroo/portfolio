@@ -14,7 +14,7 @@ function useMenuAnimation(isOpen: boolean) {
           [
             'nav',
             { transform: 'translateX(0%)' },
-            { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.5 },
+            { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.4 },
           ],
           [
             'li',
@@ -59,7 +59,10 @@ export default function Header() {
   }
 
   return (
-    <header className="z-50 flex w-full items-center justify-between p-6 lg:py-8 lg:pl-16 lg:pr-8">
+    <header
+      className="z-50 flex w-full items-center justify-between p-6 lg:py-8 lg:pl-16 lg:pr-8"
+      id="home"
+    >
       <Logo />
 
       <div ref={scope}>

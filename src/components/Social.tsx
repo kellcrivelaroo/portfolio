@@ -14,7 +14,7 @@ export default function Social() {
         <Github />
       </a>
       <a
-        href="https://www.linkedin.com/in/kellington-crivelaro-b9b817227/"
+        href="https://www.linkedin.com/in/kellcrivelaro"
         target="_blank"
         rel="noreferrer"
         className="transition-colors duration-500 hover:text-azul-200"

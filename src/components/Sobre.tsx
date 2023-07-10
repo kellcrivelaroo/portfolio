@@ -10,7 +10,7 @@ export default function Sobre() {
       </div>
       <div
         className="flex w-full flex-col items-center justify-center gap-2 px-4 py-8 leading-snug lg:gap-8
-       lg:py-12 [&>p]:text-justify [&>p]:indent-8 [&>p]:text-xl lg:[&>p]:indent-10 lg:[&>p]:leading-normal"
+       lg:py-12 [&>p]:indent-8 [&>p]:text-xl lg:[&>p]:text-justify lg:[&>p]:indent-10 lg:[&>p]:leading-normal"
       >
         <p>
           Meu nome é Kell Crivelaro, tenho 31 anos. Sou formado como técnico de
@@ -34,7 +34,7 @@ export default function Sobre() {
           fazer a diferença em sua próxima iniciativa.
         </p>
 
-        <Button text="Saiba mais" />
+        <Button text="Saiba mais" sectionId="#contato" />
       </div>
     </section>
   )

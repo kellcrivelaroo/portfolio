@@ -32,7 +32,7 @@ export default function Hero() {
             , Freelancer, e em busca de novos desafios por meio de vaga como
             desenvolvedor web.
           </h2>
-          <Button text="Entre em contato" />
+          <Button text="Entre em contato" sectionId="#contato" />
         </div>
 
         <div className="-mx-16 -mb-8 hidden lg:flex">
