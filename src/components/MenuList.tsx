@@ -3,8 +3,10 @@ import Social from './Social'
 
 export default function MenuList({ toggle, isOpen }: any) {
   const handleClick = (id: string) => {
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' })
     toggle()
+    setTimeout(() => {
+      document.querySelector(id)?.scrollIntoView()
+    }, 300)
   }
 
   return (
@@ -67,10 +69,7 @@ export default function MenuList({ toggle, isOpen }: any) {
             className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
             onClick={() => {
-              document
-                .querySelector('#contato')
-                ?.scrollIntoView({ behavior: 'smooth', block: 'end' })
-              toggle()
+              handleClick('#contato')
             }}
           >
             Contato
