@@ -22,7 +22,14 @@ export default function Hero() {
   }
 
   return (
-    <section className="flex flex-col">
+    <section className="relative flex flex-col">
+      {/* BG */}
+      <div
+        className="absolute -left-40 -top-40 z-[-1] h-[420px] w-[420px] rounded-full bg-azul-400 
+        blur-[200px] lg:-left-80 lg:-top-40 lg:h-[720px] lg:w-[720px] lg:bg-azul-400/60"
+      />
+
+      {/* Content */}
       <h1
         className="mb-4 mt-8 text-center font-alt text-3xl font-bold lg:mt-16 lg:pl-12 
       lg:text-left lg:text-[2.7em]"

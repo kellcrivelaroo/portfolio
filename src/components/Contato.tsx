@@ -9,6 +9,13 @@ export default function Contato() {
       className="relative flex flex-col items-center lg:mt-20"
       id="contato"
     >
+      {/* BG */}
+      <div
+        className="absolute -left-20 -top-28 z-[-1] h-[200px] w-[200px] rounded-full bg-azul-200/60 blur-[240px] 
+      lg:h-[500px] lg:w-[500px]"
+      />
+
+      {/* Content */}
       <div className="z-20 lg:w-[920px]">
         <h2
           className="mb-4 text-center font-alt text-4xl font-bold tracking-wider lg:pl-10 

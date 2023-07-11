@@ -32,6 +32,13 @@ export default function PersonalProject() {
 
   return (
     <section id="projetos-pessoais" className="relative mt-8">
+      {/* BG */}
+      <div
+        className="absolute -bottom-[180%] -left-[40px] z-[-1] h-[400px] w-[400px] rounded-full bg-azul-600 blur-[160px]
+      lg:-bottom-60 lg:-left-80 lg:h-[700px] lg:w-[1400px] lg:bg-azul-600/50"
+      />
+
+      {/* Content */}
       <h2 className="my-8 w-full text-center font-alt text-4xl font-bold tracking-wider lg:text-5xl">
         Projetos Pessoais
       </h2>

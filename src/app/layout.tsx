@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body
         className={`${poppins.variable} ${baiJamJuree.variable} overflow-x-hidden bg-azul-900 font-sans text-gray-50`}
       >
-        <div className="relative flex min-h-max flex-col items-center overflow-x-hidden">
+        <div className="relative flex min-h-max flex-col items-center overflow-hidden">
           <Background />
           <Header />
           <div className="max-w-lg px-8 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">

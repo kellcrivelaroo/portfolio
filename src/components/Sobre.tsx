@@ -5,7 +5,17 @@ import kell from '../assets/kell-dev.png'
 
 export default function Sobre() {
   return (
-    <section className="mt-10 flex flex-col items-center lg:p-12" id="sobre">
+    <section
+      id="sobre"
+      className="relative mt-10 flex flex-col items-center lg:p-12"
+    >
+      {/* BG */}
+      <div
+        className="absolute -right-32 top-20 z-[-1] h-[200px] w-[200px] rounded-full bg-rosa
+        blur-[200px] lg:top-32 lg:h-[520px] lg:w-[580px] lg:bg-rosa/50"
+      />
+
+      {/* Content */}
       <div className="-mb-8 flex lg:hidden">
         <Image src={kell} width={400} height={400} alt="Kell Crivelaro" />
       </div>
