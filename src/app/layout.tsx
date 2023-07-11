@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import { Montserrat, Bai_Jamjuree as BaiJamJuree } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Background from '@/components/Background'
+// import Background from '@/components/Background'
 
 const poppins = Montserrat({
   subsets: ['latin'],
