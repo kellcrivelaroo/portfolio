@@ -1,11 +1,15 @@
 import Image from 'next/image'
 import Button from './Button'
 import avatar from '../assets/Avatar.png'
+import kell from '../assets/kell-dev.png'
 
 export default function Sobre() {
   return (
     <section className="mt-10 flex flex-col items-center lg:p-12" id="sobre">
-      <div className="flex flex-col rounded-full border-8 border-gray-100 shadow-md shadow-azul-200/60">
+      <div className="-mb-8 flex lg:hidden">
+        <Image src={kell} width={400} height={400} alt="Kell Crivelaro" />
+      </div>
+      <div className="hidden rounded-full border-8 border-gray-100 shadow-md shadow-azul-200/60 lg:flex">
         <Image src={avatar} width={200} height={200} alt="Kell Crivelaro" />
       </div>
       <div
