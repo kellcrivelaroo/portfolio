@@ -5,10 +5,9 @@ import Image from 'next/image'
 import { SwiperRefCustom } from './Portfolio'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Navigation } from 'swiper'
+import { Navigation } from 'swiper'
 import 'swiper/css'
 import 'swiper/css/grid'
-import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import {
   ChevronLeft,
@@ -63,7 +62,6 @@ export default function PersonalProject() {
           grabCursor={true}
           centeredSlides={true}
           loop={false}
-          autoHeight
           breakpoints={{
             1024: {
               slidesPerView: 2,
@@ -71,8 +69,9 @@ export default function PersonalProject() {
               centeredSlides: false,
             },
           }}
-          modules={[Pagination, Navigation]}
-          className="swiper personal-project"
+          autoHeight
+          modules={[Navigation]}
+          className="swiper personal-project max-h-[342px] p-0 sm:max-h-[500px]"
         >
           {personalProjects.map((project, index) => {
             return (

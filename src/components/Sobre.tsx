@@ -13,12 +13,12 @@ export default function Sobre() {
        lg:py-12 [&>p]:indent-8 [&>p]:text-xl lg:[&>p]:text-justify lg:[&>p]:indent-10 lg:[&>p]:leading-normal"
       >
         <p>
-          Meu nome é Kell Crivelaro, tenho 31 anos. Sou formado como técnico de
-          informática pelo CTI (Colégio Técnico Industrial - UNESP) desde 2009.
-          Logo na sequencia, me formei como engenheiro civil, no entanto, minha
-          paixão pela tecnologia me levou a buscar uma nova transição para a
-          área de programação, resultando na criação da Flame Tecnologia, no ano
-          de 2022.
+          Meu nome é Kellington Crivelaro, tenho 31 anos. Sou formado como
+          técnico de informática pelo CTI (Colégio Técnico Industrial - UNESP)
+          desde 2009. Logo na sequencia, me formei como engenheiro civil, no
+          entanto, minha paixão pela tecnologia me levou a buscar uma nova
+          transição para a área de programação, resultando na criação da Flame
+          Tecnologia, no ano de 2022.
         </p>
         <p>
           Com habilidades em programação, desenvolvimento web e gerenciamento de
@@ -34,7 +34,7 @@ export default function Sobre() {
           fazer a diferença em sua próxima iniciativa.
         </p>
 
-        <Button text="Saiba mais" sectionId="#contato" />
+        <Button text="Entre em contato" sectionId="#contato" />
       </div>
     </section>
   )

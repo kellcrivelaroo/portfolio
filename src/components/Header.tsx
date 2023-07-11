@@ -14,7 +14,7 @@ function useMenuAnimation(isOpen: boolean) {
           [
             'nav',
             { transform: 'translateX(0%)' },
-            { ease: [0.08, 0.65, 0.53, 0.96], duration: 0.4 },
+            { ease: 'linear', duration: 0.4 },
           ],
           [
             'li',

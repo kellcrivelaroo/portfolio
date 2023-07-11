@@ -9,7 +9,7 @@ export default function Social() {
         href="https://github.com/kellcrivelaroo"
         target="_blank"
         rel="noreferrer"
-        className="transition-colors duration-500 hover:text-azul-200"
+        className="transition-colors duration-300 hover:text-azul-200"
       >
         <Github />
       </a>
@@ -17,7 +17,7 @@ export default function Social() {
         href="https://www.linkedin.com/in/kellcrivelaro"
         target="_blank"
         rel="noreferrer"
-        className="transition-colors duration-500 hover:text-azul-200"
+        className="transition-colors duration-300 hover:text-azul-200"
       >
         <Linkedin />
       </a>
@@ -25,7 +25,7 @@ export default function Social() {
         href="https://instagram.com/kellcrivelaro"
         target="_blank"
         rel="noreferrer"
-        className="transition-colors duration-500 hover:text-azul-200"
+        className="transition-colors duration-300 hover:text-azul-200"
       >
         <Instagram />
       </a>

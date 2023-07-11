@@ -36,14 +36,14 @@ export default function Portfolio() {
   }, [])
 
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="mb-10">
       <h2 className="mb-4 mt-10 text-center font-alt text-4xl font-bold tracking-wider lg:pl-12 lg:text-start lg:text-5xl">
         Portfólio
       </h2>
 
       {/* Card */}
       <div
-        className="flex flex-col items-center justify-center rounded-3xl border border-azul-400/20 bg-azul-700/40 
+        className="flex flex-col items-center justify-center rounded-3xl border border-azul-400/20 bg-azul-700/50 
         p-2 pt-6 shadow-lg shadow-azul-700/10 backdrop-blur-sm lg:h-[920px] lg:p-8"
       >
         <h3
@@ -55,7 +55,7 @@ export default function Portfolio() {
             href="https://flametecnologia.com.br"
             target="_blank"
             rel="noreferrer"
-            className="group -ml-3 flex text-xl transition-all duration-300 hover:text-[#ff5c00] lg:ml-0 lg:translate-y-1 
+            className="group -ml-3 flex text-xl transition-all duration-300 hover:text-flame lg:ml-0 lg:translate-y-1 
             lg:gap-2 lg:text-2xl"
           >
             <Image

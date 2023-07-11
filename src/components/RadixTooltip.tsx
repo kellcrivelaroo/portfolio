@@ -30,7 +30,7 @@ export default function RadixTooltip({ icon, alt, width }: RadixTooltipProps) {
           sideOffset={width ? setOffset() : 5}
         >
           {alt}
-          <Tooltip.Arrow className="fill-gray-50" />
+          <Tooltip.Arrow className="scale-150 fill-gray-50" />
         </Tooltip.Content>
       </Tooltip.Root>
     </Tooltip.TooltipProvider>

@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react'
 const Path = (props: any) => (
   <path
     fill="transparent"
-    strokeWidth="3"
+    strokeWidth="2"
     stroke="#fff"
-    strokeLinecap="round"
+    strokeLinecap="square"
     {...props}
   />
 )
@@ -41,7 +41,7 @@ export default function MenuToggle({ toggle, isOpen }: any) {
         'before:scale-100 before:border before:border-azul-400 before:bg-azul-400/90 before:opacity-100 before:duration-500 before:lg:bg-azul-400/70'
       }`}
     >
-      <svg width="28" height="28" viewBox="0 0 23 18">
+      <svg className="w-8 lg:w-9" viewBox="0 0 23 18">
         <Path
           d="M 2 2.5 L 20 2.5"
           className="top"

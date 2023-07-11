@@ -1,5 +1,4 @@
 'use client'
-
 import Social from './Social'
 
 export default function MenuList({ toggle, isOpen }: any) {
@@ -22,16 +21,14 @@ export default function MenuList({ toggle, isOpen }: any) {
       />
 
       <nav
-        className="fixed right-0 top-0 z-40 flex min-h-screen min-w-[80%] translate-x-full border-l
-        border-azul-700/80 bg-azul-900/90 bg-[url(../assets/stars.png)] bg-left pl-12 pt-20 font-alt text-2xl backdrop-blur-sm will-change-transform 
-        sm:text-3xl lg:min-w-[520px] lg:pl-20 lg:pt-28 lg:text-4xl
+        className="fixed right-0 top-0 z-40 flex min-h-screen min-w-[82%] translate-x-full border-l
+        border-azul-700/80 bg-azul-900/90 bg-[url(../assets/stars.png)] bg-left pl-[12%] pt-24 font-alt text-3xl backdrop-blur-sm
+        lg:min-w-[520px] lg:pl-20 lg:pt-28 lg:text-4xl
      "
       >
-        <ul
-          className="flex flex-col gap-8 lg:gap-12 [&>li:hover]:cursor-pointer [&>li:hover]:text-azul-200 [&>li]:transition-colors
-        [&>li]:duration-500"
-        >
+        <ul className="flex flex-col gap-8 lg:gap-12">
           <li
+            className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
             onClick={() => {
               handleClick('#home')
@@ -40,14 +37,16 @@ export default function MenuList({ toggle, isOpen }: any) {
             Home
           </li>
           <li
+            className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
             onClick={() => {
-              handleClick('#home')
+              handleClick('#sobre')
             }}
           >
             Sobre
           </li>
           <li
+            className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
             onClick={() => {
               handleClick('#projetos-pessoais')
@@ -56,6 +55,7 @@ export default function MenuList({ toggle, isOpen }: any) {
             Projetos Pessoais
           </li>
           <li
+            className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
             onClick={() => {
               handleClick('#portfolio')
@@ -64,6 +64,7 @@ export default function MenuList({ toggle, isOpen }: any) {
             Portfólio
           </li>
           <li
+            className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
             onClick={() => {
               handleClick('#contato')

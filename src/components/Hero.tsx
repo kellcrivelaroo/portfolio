@@ -1,8 +1,27 @@
+'use client'
 import Image from 'next/image'
-import Button from './Button'
+// import Button from './Button'
 import kell from '../assets/kell-dev.png'
+import { Copy } from 'lucide-react'
+import * as Tooltip from '@radix-ui/react-tooltip'
+import { useState } from 'react'
 
 export default function Hero() {
+  const email = 'kellcrivelaro92@gmail.com'
+  const [, setEmailCopied] = useState(false)
+  const [emailContent, setEmailContent] = useState(email)
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email)
+    setEmailCopied(true)
+    setEmailContent('E-mail copiado!')
+
+    setTimeout(() => {
+      setEmailCopied(false)
+      setEmailContent(email)
+    }, 2000)
+  }
+
   return (
     <section className="flex flex-col">
       <h1
@@ -14,12 +33,12 @@ export default function Hero() {
 
       <div
         className="flex flex-col items-center justify-between rounded-3xl border border-azul-200/20 
-        bg-azul-400/30 p-6 shadow-lg shadow-azul-400/20 backdrop-blur-sm lg:flex-row lg:px-14 lg:py-8"
+        bg-azul-400/30 px-3 py-4 shadow-lg shadow-azul-400/20 backdrop-blur-sm lg:flex-row lg:px-14 lg:py-8"
       >
-        <div className="flex basis-10/12 flex-col items-center gap-4 lg:items-start lg:gap-6">
-          <h2 className="text-center text-xl leading-snug lg:text-start lg:text-2xl lg:font-medium lg:leading-normal xl:text-3xl">
-            Desenvolvedor front-end, apaixonado por criar experiências
-            interativas. <br />
+        <div className="flex flex-col items-center gap-4 lg:basis-3/4 lg:items-start lg:gap-6">
+          <h2 className="px-4 text-center text-xl leading-snug lg:px-0 lg:text-start lg:text-2xl lg:font-medium lg:leading-normal xl:text-3xl">
+            Desenvolvedor front-end, apaixonado por Pixel Perfect e por criar
+            experiências interativas. <br />
             Sócio diretor da{' '}
             <a
               href="https://flametecnologia.com.br"
@@ -29,10 +48,37 @@ export default function Hero() {
             >
               Flame Tecnologia
             </a>
-            , Freelancer, e em busca de novos desafios por meio de vaga como
+            , freelancer, e em busca de novos desafios por meio de vaga como
             desenvolvedor web.
           </h2>
-          <Button text="Entre em contato" sectionId="#contato" />
+
+          <Tooltip.TooltipProvider delayDuration={150}>
+            <Tooltip.Root>
+              <Tooltip.Trigger
+                className="w-[288px] lg:w-[350px]"
+                onClick={handleCopy}
+              >
+                <div
+                  className="my-button group flex items-center divide-x divide-azul-200 p-2 lg:p-2.5"
+                  role="button"
+                >
+                  <span className="flex-1 px-2 text-sm font-semibold group-hover:brightness-150 lg:px-4 lg:text-lg lg:font-medium">
+                    {emailContent}
+                  </span>
+                  <div className="px-3 py-0.5 lg:pl-4">
+                    <Copy className="w-5 group-hover:brightness-150 lg:w-auto" />
+                  </div>
+                </div>
+              </Tooltip.Trigger>
+              <Tooltip.Content
+                className="tooltip hidden rounded-md bg-gray-50 px-3 py-1 font-medium text-slate-800 shadow-sm shadow-azul-200 lg:flex"
+                sideOffset={12}
+              >
+                Copiar e-mail!
+                <Tooltip.Arrow className="scale-150 fill-gray-50" />
+              </Tooltip.Content>
+            </Tooltip.Root>
+          </Tooltip.TooltipProvider>
         </div>
 
         <div className="-mx-16 -mb-8 hidden lg:flex">

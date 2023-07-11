@@ -6,12 +6,12 @@ import Social from './Social'
 export default function Contato() {
   return (
     <section
-      className="relative mt-4 flex flex-col items-center lg:mt-20"
+      className="relative flex flex-col items-center lg:mt-20"
       id="contato"
     >
       <div className="z-20 lg:w-[920px]">
         <h2
-          className="mb-4 mt-8 text-center font-alt text-4xl font-bold tracking-wider lg:pl-10 
+          className="mb-4 text-center font-alt text-4xl font-bold tracking-wider lg:pl-10 
         lg:text-start lg:text-5xl"
         >
           Contato
@@ -34,11 +34,11 @@ export default function Contato() {
               <br /> Siga-me também nas redes sociais.
             </p>
 
-            <div className="mb-4 flex flex-col gap-2 pl-6 lg:gap-4 lg:pl-0">
-              <div className="group mt-4 flex items-center gap-2 font-alt lg:mt-10">
+            <div className="flex flex-col gap-2 pl-6 lg:mb-4 lg:gap-4 lg:pl-0">
+              <div className="group mt-4 flex items-center gap-3 font-alt lg:mt-10">
                 <div className="rounded-full bg-white/20 p-2 transition-transform duration-300 group-hover:scale-110">
                   <SiWhatsapp
-                    className="h-7 w-7 transition-all duration-500 group-hover:rotate-12 group-hover:text-azul-200"
+                    className="h-7 w-7 transition-all duration-500 group-hover:rotate-6 group-hover:text-azul-200"
                     width={32}
                     height={32}
                   />
@@ -55,7 +55,7 @@ export default function Contato() {
               <div className="group mt-2 flex items-center gap-3 font-alt">
                 <div className="rounded-full bg-white/20 p-2 transition-transform duration-300 group-hover:scale-110">
                   <Mail
-                    className="transition-all duration-500 group-hover:-rotate-12 group-hover:text-azul-200"
+                    className="transition-all duration-500 group-hover:-rotate-6 group-hover:text-azul-200"
                     width={28}
                     height={28}
                   />
@@ -72,7 +72,7 @@ export default function Contato() {
               <div className="group mt-2 flex items-center gap-3 font-alt">
                 <div className="rounded-full bg-white/20 p-2 transition-transform duration-300 group-hover:scale-110">
                   <MapPin
-                    className="transition-all duration-500 group-hover:rotate-12 group-hover:text-azul-200"
+                    className="transition-all duration-500 group-hover:rotate-6 group-hover:text-azul-200"
                     width={28}
                     height={28}
                   />
@@ -81,7 +81,7 @@ export default function Contato() {
                   Bauru - SP
                 </p>
               </div>
-              <div className="mt-4 flex w-full justify-center lg:mt-8">
+              <div className="my-6 flex w-full justify-center lg:mt-6 lg:justify-start lg:pl-3">
                 <Social />
               </div>
             </div>
@@ -89,7 +89,9 @@ export default function Contato() {
 
           {/* Right */}
           <div>
-            <h3 className="text-xl font-bold">Enviar mensagem</h3>
+            <h3 className="text-center text-xl font-bold lg:text-start">
+              Enviar mensagem
+            </h3>
             <Form />
           </div>
         </div>

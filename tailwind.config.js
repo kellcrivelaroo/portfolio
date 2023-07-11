@@ -27,6 +27,7 @@ module.exports = {
           200: '#4A79CF',
         },
         rosa: '#C961DE',
+        flame: '#ff5c00',
       },
       backdropBlur: {
         sm: '2px',

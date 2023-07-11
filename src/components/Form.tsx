@@ -101,8 +101,8 @@ export default function Form() {
       )}
       <button
         type="submit"
-        className="my-button flex w-fit items-end gap-2 border border-azul-200/10 px-6 py-1.5 font-alt
-              hover:text-white hover:brightness-110 disabled:opacity-60 disabled:hover:shadow-none"
+        className="my-button flex w-fit items-end gap-2 self-center border border-azul-200/10 px-6 py-1.5 font-alt hover:text-white
+              hover:brightness-110 disabled:opacity-60 disabled:hover:shadow-none lg:self-auto"
         disabled={sending || success || fail}
       >
         <span className="pl-2 text-base">Enviar mensagem</span>
