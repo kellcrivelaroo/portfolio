@@ -3,7 +3,6 @@ import { ReactNode } from 'react'
 import { Montserrat, Bai_Jamjuree as BaiJamJuree } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Background from '@/components/Background'
 
 const poppins = Montserrat({
   subsets: ['latin'],
@@ -29,12 +28,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${poppins.variable} ${baiJamJuree.variable} overflow-x-hidden bg-azul-900 font-sans text-gray-50`}
       >
         <div className="relative flex min-h-max flex-col items-center overflow-hidden">
-          <Background />
+          {/* Stars */}
+          <div className="absolute z-[-1] min-h-full w-full bg-[url(../assets/stars.png)] bg-contain bg-repeat" />
           <Header />
-          <div className="max-w-lg px-8 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
-            {children}
-            <Footer />
-          </div>
+          {children}
+          <Footer />
         </div>
       </body>
     </html>
