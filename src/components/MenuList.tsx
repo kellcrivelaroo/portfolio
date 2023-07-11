@@ -67,7 +67,10 @@ export default function MenuList({ toggle, isOpen }: any) {
             className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
             onClick={() => {
-              handleClick('#contato')
+              document
+                .querySelector('#contato')
+                ?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+              toggle()
             }}
           >
             Contato
