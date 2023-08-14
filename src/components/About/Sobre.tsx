@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import Button from './Button'
-import avatar from '../assets/Avatar.png'
-import kell from '../assets/kell-dev.png'
+import Button from '../Button'
+import avatar from '../../assets/Avatar.png'
+import kell from '../../assets/kell-dev.png'
 
 export default function Sobre() {
   return (

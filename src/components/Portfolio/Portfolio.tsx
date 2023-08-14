@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
-import RadixTooltip from './RadixTooltip'
+import RadixTooltip from '../RadixTooltip'
 
 import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react'
 import { Pagination, Grid, Navigation } from 'swiper'
@@ -12,12 +12,12 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 import { ChevronLeft, ChevronRight, Loader2 } from 'lucide-react'
-import flameLogo from '../assets/flame-logo.png'
-import wordpress from '../assets/svgs/wordpress.svg'
-import html from '../assets/svgs/html.svg'
-import css from '../assets/svgs/css3.svg'
-import javascript from '../assets/svgs/javascript.svg'
-import { projects } from '../utils/projects'
+import flameLogo from '../../assets/flame-logo.png'
+import wordpress from '../../assets/svgs/wordpress.svg'
+import html from '../../assets/svgs/html.svg'
+import css from '../../assets/svgs/css3.svg'
+import javascript from '../../assets/svgs/javascript.svg'
+import { projects } from '../../utils/projects'
 
 export interface SwiperRefCustom extends SwiperRef {
   slidePrev: () => void

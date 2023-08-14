@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 import Image from 'next/image'
-import { SwiperRefCustom } from './Portfolio'
+import { SwiperRefCustom } from '../Portfolio/Portfolio'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
@@ -18,6 +18,7 @@ import {
 } from 'lucide-react'
 
 import { personalProjects } from '@/utils/personal-projects'
+import MainProject from './MainProject'
 
 export default function PersonalProject() {
   const swiperRef = useRef<SwiperRefCustom | null>(null)
@@ -42,6 +43,10 @@ export default function PersonalProject() {
       <h2 className="my-8 w-full text-center font-alt text-4xl font-bold tracking-wider lg:text-5xl">
         Projetos Pessoais
       </h2>
+      <MainProject />
+      <span className="mb-6 mt-6 flex justify-center text-center font-alt text-3xl font-bold lg:mt-16">
+        Outros projetos
+      </span>
       {loading && (
         <Loader2
           className="absolute left-1/2 top-1/2 -ml-8 mt-4 animate-spin text-azul-200"

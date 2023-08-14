@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import MenuList from './MenuList'
 import MenuToggle from './MenuToggle'
 import { useAnimate, stagger } from 'framer-motion'
-import Logo from './Logo'
+import Logo from '../Logo'
 
 function useMenuAnimation(isOpen: boolean) {
   const [scope, animate] = useAnimate()

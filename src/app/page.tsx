@@ -1,8 +1,8 @@
-import Hero from '@/components/Hero'
-import Sobre from '@/components/Sobre'
-import Portfolio from '@/components/Portfolio'
-import Contato from '@/components/Contato'
-import PersonalProjects from '@/components/PersonalProjects'
+import Hero from '@/components/Hero/Hero'
+import Sobre from '@/components/About/Sobre'
+import Portfolio from '@/components/Portfolio/Portfolio'
+import Contato from '@/components/Contact/Contato'
+import PersonalProjects from '@/components/PersonalProjects/PersonalProjects'
 
 export default function Home() {
   return (

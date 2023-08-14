@@ -1,7 +1,7 @@
 import { Mail, MapPin } from 'lucide-react'
 import { SiWhatsapp } from 'react-icons/si'
 import Form from './Form'
-import Social from './Social'
+import Social from '../Social'
 
 export default function Contato() {
   return (

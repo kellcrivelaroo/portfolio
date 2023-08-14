@@ -1,7 +1,7 @@
 import './globals.css'
 import { ReactNode } from 'react'
 import { Montserrat, Bai_Jamjuree as BaiJamJuree } from 'next/font/google'
-import Header from '@/components/Header'
+import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer'
 
 const poppins = Montserrat({

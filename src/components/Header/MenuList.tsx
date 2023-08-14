@@ -1,11 +1,13 @@
 'use client'
-import Social from './Social'
+import Social from '../Social'
 
 export default function MenuList({ toggle, isOpen }: any) {
   const handleClick = (id: string) => {
     toggle()
     setTimeout(() => {
-      document.querySelector(id)?.scrollIntoView()
+      document.querySelector(id)?.scrollIntoView({
+        behavior: 'smooth',
+      })
     }, 300)
   }
 

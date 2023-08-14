@@ -3,7 +3,7 @@ import * as Tooltip from '@radix-ui/react-tooltip'
 import { useState } from 'react'
 import { Copy } from 'lucide-react'
 import Image from 'next/image'
-import kell from '../assets/kell-dev.png'
+import kell from '../../assets/kell-dev.png'
 
 export default function Hero() {
   const email = 'kellcrivelaro92@gmail.com'
