@@ -1,16 +1,10 @@
 'use client'
+import { Link } from 'react-scroll'
 import Social from '../Social'
 
-export default function MenuList({ toggle, isOpen }: any) {
-  const handleClick = (id: string) => {
-    toggle()
-    setTimeout(() => {
-      document.querySelector(id)?.scrollIntoView({
-        behavior: 'smooth',
-      })
-    }, 300)
-  }
+const scrollDuration = 500
 
+export default function MenuList({ toggle, isOpen }: any) {
   return (
     <>
       <div
@@ -34,47 +28,57 @@ export default function MenuList({ toggle, isOpen }: any) {
           <li
             className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
-            onClick={() => {
-              handleClick('#home')
-            }}
           >
-            Home
+            <Link to="home" smooth duration={scrollDuration} onClick={toggle}>
+              Início
+            </Link>
           </li>
           <li
             className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
-            onClick={() => {
-              handleClick('#sobre')
-            }}
           >
-            Sobre
+            <Link to="sobre" smooth duration={scrollDuration} onClick={toggle}>
+              Sobre
+            </Link>
           </li>
           <li
             className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
-            onClick={() => {
-              handleClick('#projetos-pessoais')
-            }}
           >
-            Projetos Pessoais
+            <Link
+              to="projetos-pessoais"
+              smooth
+              duration={scrollDuration}
+              onClick={toggle}
+            >
+              Projetos Pessoais
+            </Link>
           </li>
           <li
             className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
-            onClick={() => {
-              handleClick('#portfolio')
-            }}
           >
-            Portfólio
+            <Link
+              to="portfolio"
+              smooth
+              duration={scrollDuration}
+              onClick={toggle}
+            >
+              Portifólio
+            </Link>
           </li>
           <li
             className="cursor-pointer transition-colors duration-500 hover:text-azul-200"
             role="button"
-            onClick={() => {
-              handleClick('#contato')
-            }}
           >
-            Contato
+            <Link
+              to="contato"
+              smooth
+              duration={scrollDuration}
+              onClick={toggle}
+            >
+              Contato
+            </Link>
           </li>
           <li className="mt-2">
             <Social />

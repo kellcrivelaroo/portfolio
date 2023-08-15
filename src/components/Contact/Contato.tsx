@@ -1,14 +1,12 @@
 import { Mail, MapPin } from 'lucide-react'
 import { SiWhatsapp } from 'react-icons/si'
-import Form from './Form'
+import ScrollWrapper from '../ScrollWrapper'
 import Social from '../Social'
+import Form from './Form'
 
 export default function Contato() {
   return (
-    <section
-      className="relative flex flex-col items-center lg:mt-20"
-      id="contato"
-    >
+    <section className="relative flex justify-center">
       {/* BG */}
       <div
         className="absolute -left-20 -top-28 z-[-1] h-[200px] w-[200px] rounded-full bg-azul-200/60 blur-[240px] 
@@ -16,7 +14,10 @@ export default function Contato() {
       />
 
       {/* Content */}
-      <div className="z-20 lg:w-[920px]">
+      <ScrollWrapper
+        name="contato"
+        className="z-20 flex flex-col items-center lg:mt-20 lg:w-[920px]"
+      >
         <h2
           className="mb-4 text-center font-alt text-4xl font-bold tracking-wider lg:pl-10 
         lg:text-start lg:text-5xl"
@@ -102,7 +103,7 @@ export default function Contato() {
             <Form />
           </div>
         </div>
-      </div>
+      </ScrollWrapper>
     </section>
   )
 }
