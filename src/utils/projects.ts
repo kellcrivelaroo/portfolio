@@ -7,7 +7,8 @@ import tendtudo from '../assets/portfolio-flame/tendtudo-piscinas.jpg'
 import audioclear from '../assets/portfolio-flame/audioclear.jpg'
 import lazuli from '../assets/portfolio-flame/lazuli.jpg'
 import magistral from '../assets/portfolio-flame/magistral.jpg'
-import sonoConforto from '../assets/portfolio-flame/sono-conforto.jpg'
+import dabusAbiati from '../assets/portfolio-flame/dabus-abiati.jpg'
+import spumpalah from '../assets/portfolio-flame/spumpalah.jpg'
 import spazio from '../assets/portfolio-flame/spazio.jpg'
 import textil from '../assets/portfolio-flame/textil-piratininga.jpg'
 
@@ -23,14 +24,19 @@ export const projects = [
     url: 'uselazulishop.com.br',
   },
   {
-    title: 'Grupo JM',
-    image: jm,
-    url: 'grupojmservicos.com.br',
+    title: 'Dabus Abiati',
+    image: dabusAbiati,
+    url: 'dabusabiati.com.br',
   },
   {
-    title: 'Dedica odonto',
-    image: dedica,
-    url: 'dedicaodonto.com.br',
+    title: 'Spumpalah',
+    image: spumpalah,
+    url: 'spumpalah.com',
+  },
+  {
+    title: 'Spazio Colchões',
+    image: spazio,
+    url: 'spaziocolchoes.com.br',
   },
   {
     title: 'Rudcred',
@@ -38,14 +44,14 @@ export const projects = [
     url: 'rudcred.com.br',
   },
   {
+    title: 'Grupo JM',
+    image: jm,
+    url: 'grupojmservicos.com.br',
+  },
+  {
     title: 'Tendtudo Piscinas',
     image: tendtudo,
     url: 'tendtudopiscinas.com.br',
-  },
-  {
-    title: 'Spazio Colcões',
-    image: spazio,
-    url: 'spaziocolchoes.com.br',
   },
   {
     title: 'Têxtil Piratininga',
@@ -62,15 +68,14 @@ export const projects = [
     image: audioclear,
     url: 'audioclear.com.br',
   },
-
+  {
+    title: 'Dedica odonto',
+    image: dedica,
+    url: 'dedicaodonto.com.br',
+  },
   {
     title: 'Magistral Pharma',
     image: magistral,
     url: 'magistralpharma.com.br',
-  },
-  {
-    title: 'Sono e Conforto',
-    image: sonoConforto,
-    url: 'sonoeconforto.com.br',
   },
 ]
