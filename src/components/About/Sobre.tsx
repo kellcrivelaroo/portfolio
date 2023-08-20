@@ -50,7 +50,7 @@ export default function Sobre() {
             para fazer a diferença em sua próxima iniciativa.
           </p>
 
-          <Button text="Entre em contato" sectionId="#contato" />
+          <Button text="Entre em contato" />
         </div>
       </ScrollWrapper>
     </section>
