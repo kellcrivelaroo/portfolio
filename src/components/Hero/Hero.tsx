@@ -56,8 +56,8 @@ export default function Hero() {
               >
                 Flame Tecnologia
               </a>
-              , freelancer, e em busca de novos desafios por meio de vaga como
-              desenvolvedor web.
+              , freelancer, e sempre em busca de novos desafios no mundo do
+              desenvolvimento web.
             </h2>
 
             <Tooltip.TooltipProvider delayDuration={150}>

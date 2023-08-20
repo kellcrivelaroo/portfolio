@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import avatar from '../../assets/Avatar.png'
+import avatar from '../../assets/avatar2.png'
 import kell from '../../assets/kell-dev.png'
 import Button from '../Button'
 import ScrollWrapper from '../ScrollWrapper'
@@ -21,8 +21,8 @@ export default function Sobre() {
         <div className="-mb-8 flex lg:hidden">
           <Image src={kell} width={400} height={400} alt="Kell Crivelaro" />
         </div>
-        <div className="hidden rounded-full border-8 border-gray-100 shadow-md shadow-azul-200/60 lg:flex">
-          <Image src={avatar} width={200} height={200} alt="Kell Crivelaro" />
+        <div className="hidden rounded-full lg:flex">
+          <Image src={avatar} width={240} height={240} alt="Kell Crivelaro" />
         </div>
         <div
           className="flex w-full flex-col items-center justify-center gap-2 px-4 py-8 leading-snug lg:gap-8
